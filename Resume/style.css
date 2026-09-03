@@ -1,0 +1,164 @@
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --text: #171717;
+  --muted: #737373;
+  --border: #e5e5e5;
+  --accent: #2563eb;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--surface);
+  padding: 48px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.title {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+  font-size: 0.875rem;
+}
+
+.contact-links a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+
+.contact-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.item-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.item-sub {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.item-desc {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.skills-list li {
+  font-size: 0.8rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    border: none;
+    border-radius: 0;
+    padding: 24px;
+  }
+  .item-header {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+  .container {
+    border: none;
+    padding: 0;
+    max-width: 100%;
+  }
+}
