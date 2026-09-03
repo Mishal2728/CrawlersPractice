@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: border-box;
+}
+
+
+.navbar {
+    height: 60px;
+    background-color: #0d1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Box1 */
+
+.nav-logo {
+    height: 50px;
+    width: 114px;
+    margin-left: 15px;
+}
+
+.logo {
+    background-image: url(assets/amazon_logo.png);
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+/* Box2 */
+
+.address {
+    padding: 8px;
+}
+
+.add-first {
+    font-size: 12px;
+    color: #CCCCCC;
+    margin-left: 18px;
+}
+
+.add-second {
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+.add-icon {
+    display: flex;
+}
+
+/* Box3 */
+
+.nav-search {
+    display: flex;
+    background-color: rgb(255, 174, 44);
+    width: 1000px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-select {
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: rgb(216, 215, 215);
+    text-align: center;
+}
+
+.search-input {
+    height: 40px;
+    width: 1000px;
+    border: none;
+    padding: 0 10px;
+}
+
+.search-icon {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f1111;
+}
+
+.nav-signin,
+.return {
+    font-size: 12px;
+}
+
+.accounts,
+.order {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-signin,
+.nav-return-order,
+.nav-cart,
+.allpanel,
+.panel-ops p,
+.panel-deals {
+    padding: 8px;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+}
+
+.cart {
+    margin-top: 15px;
+}
+
+.panel {
+    height: 50px;
+    width: 100%;
+    background-color: #242929;
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+}
+
+.panel p {
+    display: inline;
+    margin-left: 13px;
+    color: white;
+    font-weight: 400;
+}
+
+
+.panel-ops {
+    width: 80%;
+}
+
+.allpanel {
+    margin-right: 40px;
+    margin-left: 7px;
+}
+
+/* Hero section */
+
+.hero-section {
+    background-image: url(assets/hero_image.jpg);
+    min-height: 1220px;
+    height: auto;
+    width: 100%;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.hero-mes {
+    height: 50px;
+    width: 90%;
+    background-color: #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 300px;
+    border-radius: 4px;
+}
+.content-box {
+    position: absolute;
+    top: 350px;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.boxes {
+    height: 400px;
+    width: 23%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boxes h2 {
+    width: 100%;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+.box-img {
+    width: 100%;
+    height: 300px;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.under-box-text {
+    width: 100%;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 7px;
+    
+}
+
+
+.backtotop {
+    height: 45px;
+    width: 100%;
+    background-color: #313333;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backtotop p {
+    margin: 0;
+}
+
+.infobox{
+    height: 250px;
+    width: 100%;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.infohead {
+    font-size: 17px;
+    font-weight: 700;
+   
+}
+
+.infobox .infohead{
+    margin-bottom: 50px;
+}
+.infospan{
+    display: block;
+}
+
+hr {
+    border: none;
+    border-top: 0.6px solid white ;
+}
+
+.infobox2{
+    height: 50px;
+    width: 100%;
+    background-color: #232F3E;
+}
