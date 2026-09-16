@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------NAVBAR--------------------------- */
+
+.navbar {
+    background: linear-gradient(90deg, #1F140D, #9B8074);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+}
+
+.navbar-nav {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ---------------------HERO--------------------------- */
+
+#hero {
+    background: linear-gradient(90deg, #1F140D, #9B8074);
+    color: white;
+    position: relative;
+    padding-top: 3rem;
+}
+
+#hero .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#hero .hero-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+#hero .play-btn {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+#hero .play-btn i {
+    font-size: 1.8rem;
+    color: #ffaa00;
+}
+
+#hero .play-btn:hover {
+    transform: translateX(5px);
+}
+
+#hero .hero-img {
+    max-height: 320px;
+    margin-top: 1rem;
+}
+
+#hero .bottom-img {
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+}
+
+/* ---------------------services------------------------- */
+
+#service {
+
+    /* padding: 70px 0; */
+    background: #fff;
+}
+
+#service h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+#service .col-md-4 {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#service .col-md-4:hover {
+    transform: translateY(-10px);
+}
+
+#service img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+#service h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#service p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* -------------------aboutus------------------ */
+
+#aboutus {
+    padding: 40px 0;
+}
+
+#aboutus .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#aboutus .h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#aboutus ul {
+    padding-left: 0;
+}
+
+#aboutus li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 0;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+#aboutus li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #9B8074;
+    font-weight: bold;
+}
+
+#aboutus img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*------------------------- projects-----------------------  */
+
+#projects h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.projects-box {
+    border-left: 4px solid black;
+    height: 11rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+}
+
+.projects-box img {
+    height: 4.5rem;
+    width: 4.55rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.projects-box .user-det {
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 0 1rem;
+}
+
+/* ----------------------social meida--------------------- */
+
+#social-media h2 {
+    text-align: center;
+    margin-top: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#social-media {
+    margin: 5rem;
+    text-align: center;
+}
+
+#social-media .social-icons img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 0.5rem;
+    margin-top: 2rem;
+
+}
+
+#social-media .social-icons img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-btn {
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .nav-btn:hover {
+    background-color: #272727;
+}
+
+.navbar .nav-icon {
+    font-size: 1.4rem;
+}
+
+.profile-pic {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* navbar left side  */
+
+.navbar .nav-left .menu img {
+    height: 30px;
+    margin-left: 1rem;
+}
+
+.navbar .nav-left .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-left .menu .youtube-text {
+    margin-left:5px;
+    font-size: 1.2rem;
+}
+
+/* navbar center  */
+
+.navbar .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar .nav-center .search-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #121212;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.navbar .nav-center .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 1rem;
+    font-size: 1rem;
+    width: 500px;
+}
+
+.navbar .nav-center .search-input::placeholder {
+    color: #aaaaaa;
+}
+
+.navbar .nav-center .search-btn {
+    background-color: #222222;
+    border: none;
+    border-left: 1px solid #303030;
+    height: 100%;
+    width: 64px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.navbar .nav-center .search-btn:hover {
+    background-color: #303030;
+}
+
+.navbar .nav-center .mic-btn {
+    background-color: #181818;
+    margin-left: 0.5rem;
+}
+
+.navbar .nav-center .mic-btn:hover {
+    background-color: #303030;
+}
+
+/* navbar right  */
+
+.navbar .nav-right .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.create-pill-btn {
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    height: 36px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create-pill-btn:hover {
+    background-color: #3f3f3f;
+}
+
+.create-pill-btn i {
+    font-size: 1.2rem;
+}
+
+/* --- Main Layout --- */
+.main-layout {
+    display: flex;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 240px;
+    background-color: #0f0f0f;
+    overflow-y: auto;
+    padding: 0.5rem;
+    flex-shrink: 0;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 4px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background-color: #717171;
+}
+
+.sidebar-section {
+    padding: 0.5rem 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    gap: 1.2rem;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+    background-color: #272727;
+}
+
+.sidebar-item i {
+    font-size: 1.4rem;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background-color: #3f3f3f;
+    margin: 0.5rem 0;
+}
+
+.sidebar-title {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+/* --- Content Area --- */
+.content-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #0f0f0f;
+}
+
+/* --- Categories Bar --- */
+.categories-bar {
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #0f0f0f;
+    z-index: 10;
+    overflow-x: auto;
+}
+
+.categories-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.category-chip {
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.category-chip:hover {
+    background-color: #3f3f3f;
+}
+
+.category-chip.active {
+    background-color: white;
+    color: black;
+}
+
+/* --- Video Grid --- */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem 1rem;
+    padding: 1.5rem;
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.thumbnail-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.15rem 0.3rem;
+    border-radius: 4px;
+}
+
+.video-info {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.channel-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.channel-name, .video-stats {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+.channel-name {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.verified-icon {
+    font-size: 0.85rem;
+}
+
+.video-card:hover .thumbnail {
+    border-radius: 0;
+    transition: border-radius 0.3s ease;
+}

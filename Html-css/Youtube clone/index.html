@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<body>
+    <header style="background-color: #0f0f0f; padding: 0 1rem; height: 56px; display: flex; align-items: center;">
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="menu">
+                    <button class="nav-btn">
+                        <i class="ri-menu-line nav-icon"></i>
+                    </button>
+                    <img src="images/logo.svg" class="youtube-logo" alt="YouTube">
+                    <p class="youtube-text">YouTube</p>
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="search-field">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button class="search-btn">
+                        <i class="ri-search-line search-icon"></i>
+                    </button>
+                </div>
+                <button class="nav-btn mic-btn">
+                    <i class="ri-mic-fill nav-icon"></i>
+                </button>
+            </div>
+            <div class="nav-right">
+                <div class="right-menu">
+                    <button class="create-pill-btn">
+                        <i class="ri-add-line"></i> Create
+                    </button>
+                    <div class="notification-wrapper">
+                        <button class="nav-btn">
+                            <i class="ri-notification-4-line nav-icon"></i>
+                        </button>
+                    </div>
+                    <img src="images/profile.jpeg" class="profile-pic" alt="Profile">
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-item active">
+                    <i class="ri-home-8-fill"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-vidicon-line"></i>
+                    <span>Shorts</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-youtube-line"></i>
+                    <span>Subscriptions</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">You <i class="ri-arrow-right-s-line"></i></h3>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-history-line"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-play-list-2-line"></i>
+                    <span>Playlists</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-time-line"></i>
+                    <span>Watch Later</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-thumb-up-line"></i>
+                    <span>Liked videos</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Explore</h3>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-fire-line"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span>Shopping</span>
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="ri-music-2-line"></i>
+                    <span>Music</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            
+            <!-- Category Filters -->
+            <div class="categories-bar">
+                <button class="category-chip active">All</button>
+                <button class="category-chip">Live</button>
+                <button class="category-chip">News</button>
+                <button class="category-chip">Music</button>
+                <button class="category-chip">Gaming</button>
+                <button class="category-chip">Web Development</button>
+                <button class="category-chip">Mixes</button>
+                <button class="category-chip">Tamil Cinema</button>
+                <button class="category-chip">Trailers</button>
+                <button class="category-chip">AI</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=1" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">LIVE</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="images/profile.jpeg" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">LIVE: Breaking News Update | Top Stories</h3>
+                            <p class="channel-name">Polimer News <i class="ri-check-line verified-icon"></i></p>
+                            <p class="video-stats">59k watching</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=2" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">5:48</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://picsum.photos/40/40?random=1" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">Radhimaa (Music Video) | Beautiful Song</h3>
+                            <p class="channel-name">The Gram Comedy <i class="ri-check-line verified-icon"></i></p>
+                            <p class="video-stats">2m views • 8 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=3" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">2:59</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://picsum.photos/40/40?random=2" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">Jamun | Joseph | Mathew Shortfilm</h3>
+                            <p class="channel-name">Kaathadi club <i class="ri-check-line verified-icon"></i></p>
+                            <p class="video-stats">244k views • 14 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Card 4 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=4" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">14:26</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://picsum.photos/40/40?random=3" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">Magic Navigation Menu Indicator using HTML CSS</h3>
+                            <p class="channel-name">Online Tutorials <i class="ri-check-line verified-icon"></i></p>
+                            <p class="video-stats">2.1m views • 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 5 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=5" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">2:02:53</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://picsum.photos/40/40?random=4" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">Day 144 learning web dev: Building a Clone</h3>
+                            <p class="channel-name">BenStack</p>
+                            <p class="video-stats">5.1k views • Streamed 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 6 -->
+                <div class="video-card">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://picsum.photos/400/225?random=6" class="thumbnail" alt="Video Thumbnail">
+                        <span class="video-duration">Mix</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://picsum.photos/40/40?random=5" class="channel-avatar" alt="Channel Avatar">
+                        <div class="video-details">
+                            <h3 class="video-title">Mix - Nallaru Po | Dude | Pradeep Ranganathan</h3>
+                            <p class="channel-name">Vivek, Tippu, Vignesh Shivan and more</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
